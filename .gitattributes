@@ -5,4 +5,4 @@ MAINCOD/*.py filter=git-crypt diff=git-crypt
 # secrets.json filter=git-crypt diff=git-crypt
 
 # Не шифруем виртуальное окружение и системные файлы
-venv/ -filter -diff
+venv/ !filter !diff
