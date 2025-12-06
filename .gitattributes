@@ -1,0 +1,8 @@
+# Шифруем все Python файлы в MAINCOD/
+MAINCOD/*.py filter=git-crypt diff=git-crypt
+# Можно добавить другие чувствительные файлы
+# *.key filter=git-crypt diff=git-crypt
+# secrets.json filter=git-crypt diff=git-crypt
+
+# Не шифруем виртуальное окружение и системные файлы
+venv/ -filter -diff
